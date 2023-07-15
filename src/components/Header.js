@@ -9,6 +9,7 @@ function Header() {
 
   useEffect(() => {
     getTime();
+    getJson();
 
     setTimeout(() => {
       getTime();
@@ -19,12 +20,16 @@ function Header() {
     setTime(dayjs(new Date()).format("YYYY년 MM월 DD일 / HH시 mm분"));
   };
 
-  if (JSON.parse(localStorage.getItem("game")) !== null) {
-    let sortlist = JSON.parse(localStorage.getItem("game"));
-    sortlist.sort((a, b) => b - a);
+  const getJson = () => {
+    if (JSON.parse(localStorage.getItem("game")) !== null) {
+      let sortlist = JSON.parse(localStorage.getItem("game"));
+      sortlist.sort((a, b) => b - a);
 
-    setScorelist(sortlist);
-  }
+      setScorelist(sortlist);
+    } else {
+      return;
+    }
+  };
 
   return (
     <div id="header">
