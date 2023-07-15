@@ -71,9 +71,15 @@ function Gamehome() {
   } else if (current == page) {
     return (
       <div id="game-home">
-        최종 점수 : {score}
-        <button onClick={() => savegame()}>저장</button>
-        <button onClick={() => newgame()}>다시 시작</button>
+        <div className="scores">
+          최종 점수 : {score}
+          <button className="submit-btn" onClick={() => savegame()}>
+            저장
+          </button>
+          <button className="regame-btn" onClick={() => newgame()}>
+            새게임
+          </button>
+        </div>
       </div>
     );
   } else if (current <= page - 1) {
@@ -89,14 +95,16 @@ function Gamehome() {
             score={score}
             addCurrent={addCurrent}
           />
-          난이도 조절:{" "}
-          <select onChange={(e) => setPage(e.target.value)} value={page}>
-            <option value={5}>5 - 쉬움</option>
-            <option value={7}>7 - 보통</option>
-            <option value={10}>10 - 어려움</option>
-            <option value={20}>20 - 매우 어려움</option>
-            <option value={30}>30 - 헬</option>
-          </select>
+          <div className="easy">
+            난이도 조절:{" "}
+            <select onChange={(e) => setPage(e.target.value)} value={page}>
+              <option value={5}>5 - 쉬움</option>
+              <option value={7}>7 - 보통</option>
+              <option value={10}>10 - 어려움</option>
+              <option value={20}>20 - 매우 어려움</option>
+              <option value={30}>30 - 헬</option>
+            </select>
+          </div>
         </div>
       </div>
     );
