@@ -21,3 +21,28 @@
 .active {
   color: red;
 }
+
+@media screen and (max-width: 960px) {
+  .pages {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .pages {
+    margin-left: 5%;
+  }
+  .pages div {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pages {
+    margin-left: 0;
+  }
+  .pages div {
+    font-size: 0.8em;
+    margin-left: 4%;
+  }
+}

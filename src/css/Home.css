@@ -6,10 +6,32 @@
 }
 
 #home div {
-  margin-left: 25%;
+  width: 75%;
+  float: right;
   font-size: 3.3em;
 }
 
 #home div:hover {
   color: greenyellow;
+}
+
+@media screen and (max-width: 900px) {
+  #home div {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  #home div {
+    width: 100%;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 520px) {
 }

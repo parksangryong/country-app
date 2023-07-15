@@ -50,3 +50,33 @@
   line-height: 20px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 960px) {
+  #search-item {
+    width: 21.8%;
+    height: 500px;
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #search-item {
+    width: 30%;
+    height: 500px;
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #search-item {
+    width: 45%;
+    height: 500px;
+    margin-left: 3.3%;
+  }
+  .info-img {
+    height: 130px;
+  }
+  .txt {
+    font-size: 0.8em;
+  }
+}

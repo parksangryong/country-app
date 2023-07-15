@@ -52,8 +52,9 @@ function Header() {
       </div>
       <div className="times">{time}</div>
       <div className="top">
-        1st. {scorelist[0]} <br /> 2nd. {scorelist[1]} <br /> 3rd.{" "}
-        {scorelist[2]}
+        <div>1st. {scorelist[0]} &nbsp;</div>
+        <div>2nd. {scorelist[1]} &nbsp;</div>
+        <div>3rd. {scorelist[2]} &nbsp;</div>
       </div>
     </div>
   );

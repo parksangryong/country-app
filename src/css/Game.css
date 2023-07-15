@@ -77,3 +77,152 @@
   background-color: brown;
   color: white;
 }
+
+@media screen and (max-width: 960px) {
+  #game {
+    width: 75%;
+    height: 400px;
+    left: 12.5%;
+  }
+  .game-img {
+    width: 40%;
+    margin-right: 5%;
+    height: 200px;
+  }
+  .game-img img {
+    height: 200px;
+  }
+
+  .game-check {
+    width: 50%;
+    height: 200px;
+  }
+
+  .btn-check {
+    bottom: 0;
+    right: 0;
+  }
+  .btn-pass {
+    bottom: 0;
+    left: 0;
+  }
+  .game-score {
+    top: 10px;
+    left: 35%;
+  }
+  .game-text {
+    top: 80px;
+    left: 15%;
+  }
+
+  .btn-hints {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #game {
+    width: 75%;
+    height: 400px;
+    left: 12.5%;
+  }
+  .game-img {
+    width: 40%;
+    margin-right: 5%;
+    height: 120px;
+  }
+  .game-img img {
+    height: 100%;
+  }
+
+  .game-check {
+    width: 50%;
+    height: 150px;
+  }
+
+  .btn-check {
+    bottom: 0;
+    right: 0;
+  }
+  .btn-pass {
+    bottom: 0;
+    left: 0;
+  }
+  .game-score {
+    top: 10px;
+    left: 35%;
+  }
+  .game-text {
+    top: 50px;
+    left: 0%;
+  }
+  .game-text input {
+    width: 70%;
+  }
+
+  .btn-hints {
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 100%;
+    height: 300px;
+  }
+  .btn-hints > button {
+    width: 15px;
+    height: 15px;
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #game {
+    width: 75%;
+    height: 550px;
+  }
+  .game-img {
+    width: 95%;
+    margin-right: 5%;
+    height: 150px;
+  }
+
+  .game-check {
+    width: 100%;
+    height: 150px;
+  }
+
+  .btn-check {
+    bottom: 0;
+    right: 10px;
+  }
+  .btn-pass {
+    bottom: 0;
+    left: 20px;
+  }
+  .game-score {
+    top: 10px;
+    left: 35%;
+  }
+  .game-text {
+    top: 50px;
+    left: 8%;
+  }
+  .game-text input {
+    width: 70%;
+  }
+
+  .btn-hints {
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 95%;
+    height: 300px;
+    font-size: 0.7em;
+  }
+  .btn-hints > button {
+    width: 15px;
+    height: 15px;
+    font-size: 0.6em;
+    margin-right: 5%;
+  }
+}
