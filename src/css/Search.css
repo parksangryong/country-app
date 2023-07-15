@@ -1,0 +1,23 @@
+#search {
+  width: 100%;
+  height: auto;
+  background-color: burlywood;
+  padding-top: 10px;
+}
+
+.pages {
+  width: 80%;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 10%;
+}
+.pages div {
+  display: inline;
+  margin-left: 5%;
+  line-height: 100px;
+  font-size: 1.4em;
+}
+
+.active {
+  color: red;
+}
