@@ -5,6 +5,7 @@ import dayjs from "dayjs";
 
 function Header() {
   const [time, setTime] = useState("");
+  const [scorelist, setScorelist] = useState([0, 0, 0]);
 
   useEffect(() => {
     getTime();
@@ -19,8 +20,10 @@ function Header() {
   };
 
   if (JSON.parse(localStorage.getItem("game"))) {
-    let scorelist = JSON.parse(localStorage.getItem("game"));
-    scorelist.sort((a, b) => b - a);
+    let sortlist = JSON.parse(localStorage.getItem("game"));
+    sortlist.sort((a, b) => b - a);
+
+    setScorelist(sortlist);
   }
 
   return (
