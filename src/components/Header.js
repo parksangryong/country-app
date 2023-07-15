@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 
 function Header() {
   const [time, setTime] = useState("");
-  const [scorelist, setScorelist] = useState([0, 0, 0]);
+  const [scorelist, setScorelist] = useState([20, 10, 0]);
 
   useEffect(() => {
     getTime();
@@ -19,7 +19,7 @@ function Header() {
     setTime(dayjs(new Date()).format("YYYY년 MM월 DD일 / HH시 mm분"));
   };
 
-  if (JSON.parse(localStorage.getItem("game"))) {
+  if (JSON.parse(localStorage.getItem("game")) !== null) {
     let sortlist = JSON.parse(localStorage.getItem("game"));
     sortlist.sort((a, b) => b - a);
 
