@@ -15,10 +15,10 @@ function Gamehome() {
   }, [page]);
 
   const getcountry = async () => {
-    const API_KEY = process.env.REACT_APP_API_KEY;
+    //const API_KEY = process.env.REACT_APP_API_KEY;
 
     const result = await axios.get(
-      `https://apis.data.go.kr/1262000/CountryBasicService/getCountryBasicList?serviceKey=${API_KEY}&numOfRows=500&pageNo=1`
+      `https://apis.data.go.kr/1262000/CountryBasicService/getCountryBasicList?serviceKey=yC75pzYQoZwkAPeM9CfYYqsccTC2bLhtXaAPb/JoLbuwDhB77OL1EV6Vs4fIc3Z21koiLPMdsHsZ66Mv4RpA/Q==&numOfRows=500&pageNo=1`
     );
     //console.log(result.data.response.body.items.item);
     //setCountrylist(result.data.response.body.items.item);
@@ -28,7 +28,7 @@ function Gamehome() {
       const random = Math.floor(Math.random() * 197);
       alist.push(result.data.response.body.items.item[random]);
     }
-    console.log(alist);
+    //console.log(alist);
 
     setQuizlist(alist);
   };
@@ -64,7 +64,7 @@ function Gamehome() {
     localStorage.setItem("game", JSON.stringify(obj));
   };
 
-  console.log(page, current);
+  //console.log(page, current);
 
   if (!quizlist[0]) {
     return <div id="game-home">시작 중...</div>;
