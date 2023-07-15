@@ -18,8 +18,10 @@ function Header() {
     setTime(dayjs(new Date()).format("YYYY년 MM월 DD일 / HH시 mm분"));
   };
 
-  let scorelist = JSON.parse(localStorage.getItem("game"));
-  scorelist.sort((a, b) => b - a);
+  if (JSON.parse(localStorage.getItem("game"))) {
+    let scorelist = JSON.parse(localStorage.getItem("game"));
+    scorelist.sort((a, b) => b - a);
+  }
 
   return (
     <div id="header">
