@@ -274,8 +274,13 @@ function SearchItem(props) {
     }
   };
 
+  const moveSite = () => {
+    window.location.href =
+      "https://www.google.co.kr/maps/place/" + props.countryName + "/";
+  };
+
   return (
-    <div id="search-item">
+    <div id="search-item" onClick={moveSite}>
       <div className="info-img">
         <img src={props.imgUrl} />
       </div>
